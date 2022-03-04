@@ -1,0 +1,66 @@
+@media only screen and (min-width: 1200px){
+    .container {
+        max-width: 840px;
+        }
+    .splide__slide {
+        height: 420px;
+    }
+    .hero-slide {
+        height: 420px;
+    }
+    .map-wrapper {
+        width: 840px;
+    }
+    .service-wrapper {
+        position: relative;
+        padding-bottom: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 840px;
+        }
+    .map-wrapper {
+        max-width: 840px;
+    }
+    
+}
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+
+@media (max-width: 480px) {
+    .col-3 {
+        padding-left: 10px;
+        padding-right: 0;
+
+    }
+    .col-9 {
+        padding-right: 10px;
+    }
+    .list-group-item {
+        padding: 0.75rem 0.25rem;
+    }
+
+}
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+
+@media (max-width: 320px) {
+    .l-item {
+        margin-right: 5px;
+    }
+    .col-3 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .col-9 {
+        padding-right: 0;
+    }
+    .list-group-item {
+        padding: 0.75rem 0.25rem;
+    }
+}
+
+
+

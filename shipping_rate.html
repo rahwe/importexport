@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Winglobal</title>
+  </head>
+  <body>
+    <div class="fixed-top">
+      <nav class="navbar navbar-dark bg-light d-flex">
+        <a href="index.html">
+          <img src="images/icon/back.png" alt="winglobal">
+        </a>
+        <div class="title-head">
+          <p class="logo-sub-title">Shipment</p>
+        </div>
+      </nav>
+    </div>
+  
+    <main class="page-content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <div class="card mb-5">
+                            <div class="card-body">
+                                <form>
+                                <div class="form-group mb-2">
+                                  <label>Send From: <span class="must-mark">*</span></label>
+                                  <select class="form-control">
+                                      <option>Tap here to set origin</option>
+                                      <option>Taiwan</option>
+                                      <option>China</option>
+                                      <option>Cambodia</option>
+                                      <option>Thai</option>
+                                      <option>Vietname</option>
+                                  </select>
+                                </div>
+                                <div class="form-group mb-2">
+                                  <label>Send To: <span class="must-mark">*</span></label>
+                                  <select class="form-control">
+                                      <option>Tap here to set destination</option>
+                                      <option>Taiwan</option>
+                                      <option>China</option>
+                                      <option>Cambodia</option>
+                                      <option>Thai</option>
+                                      <option>Vietname</option>
+                                  </select>
+                                </div>
+                                
+                                <div class="form-group mb-2">
+                                    <label>Shipping Method: <span class="must-mark">*</span></label>
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                        <option>Air Express</option>
+                                        <option>Land Tracking</option>
+                                        <option>Sea Shipping</option>
+                                    </select>
+                                    
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label>Commodities: <span class="must-mark">*</span></label>
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                        <option>Document</option>
+                                        <option>Parcel</option>
+                                        <option>General Items</option>
+                                        <option>Sensitive item</option>
+                                        <option>Machinery</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <div class="form-row">
+                                    <div class="col-8">
+                                        <div class="form-group">
+                                            <label>Actual Weight: <span class="must-mark">*</span></label>
+                                            <input type="text" class="form-control" placeholder="Input name">
+                                        </div>
+                                        <label>Dimension(L x W x H): <span class="must-mark">*</span></label>
+                                        <div class="form-group">
+                                            <div class="dimen d-flex justify-content-between">
+                                                <input type="text" class="form-control" placeholder="L">
+                                                <span class="multiply">x</span>
+                                                <input type="text" class="form-control" placeholder="W">
+                                                <span class="multiply">x</span>
+                                                <input type="text" class="form-control" placeholder="H">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="box">
+                                            <p style="margin: 0px;">Dimensional:</p>
+                                            <p style="color: red;">0 m3 - 0 kg</p>
+                                            <img src="images/box.png" class="box-img" alt="box" width="100px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <label>Chargeable:</label>
+                                
+                                <div class="form-group d-flex justify-content-between">
+                                  <div class="weight-wrap">
+                                    <div class="btn btn-sm weight active-charge">Weight</div>
+                                    <div class="btn btn-sm cbm">CBM</div>
+                                  </div>
+                                    
+                                  <div class="currency">
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                      <label class="form-check-label" for="exampleRadios1">
+                                        USD
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                      <label class="form-check-label" for="exampleRadios2">
+                                        TWD
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                      <label class="form-check-label" for="exampleRadios3">
+                                        RAM
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <hr>
+                                <a href="recipient.html" class="btn btn-primary btn-sm btn-block" data-toggle="modal" data-target="#shipmemtCalculate">Calculate</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="footer-section">
+          <div class="container">
+            <div class="row d-flex justify-content-between px-3">
+              <div class="menu-bottom text-center">
+                <a href="index.html" class="footer-menu active-menu">
+                  <i class="fas fa-home fa-lg active-menu"></i>
+                  <figcaption>Home</figcaption>
+                </a>
+              </div>
+              <div class="menu-bottom text-center">
+                <a href="notification.html" class="footer-menu">
+                  <i class="fas fa-bell fa-lg"></i>
+                  <figcaption>Notification</figcaption>
+                </a>
+              </div>
+              <div class="menu-bottom text-center">
+                <a href="warehouse.html" class="footer-menu">
+                  <i class="fas fa-pallet fa-lg"></i>
+                  <figcaption>warehouse</figcaption>
+                </a>
+              </div>
+              <div class="menu-bottom text-center">
+                <a href="nearby.html" class="footer-menu">
+                  <i class="fas fa-map-pin fa-lg"></i>
+                  <figcaption>Nearby</figcaption>
+                </a>
+              </div>
+              <div class="menu-bottom text-center">
+                <a href="service.html" class="footer-menu">
+                  <i class="fas fa-headset fa-lg"></i>
+                  <figcaption>Service</figcaption>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="shipmemtCalculate" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="shipmemtCalculateLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <p class="modal-title alert alert-warning"><i class="fas fa-exclamation-circle" style="color: red;"></i> Shipping cost based on the weight or volume of the package whichever is the greater. Length, width, Height must less then 200cm</p>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">Shipping By</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Weight/CBM</th>
+                            <th scope="col">Shipping rates</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Land</td>
+                            <td>Parcel</td>
+                            <td>5.00Kg</td>
+                            <td>$7.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+  </body>
+</html>

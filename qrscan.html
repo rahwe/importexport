@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Winglobal</title>
+
+    <style>
+        .result{
+          background-color: red;
+          color:#fff;
+          padding:20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="fixed-top">
+        <nav class="navbar navbar-dark bg-light d-flex">
+          <a href="index.html">
+            <img src="images/icon/back.png" alt="winglobal">
+          </a>
+          <div class="title-head">
+            <p class="logo-sub-title">Scan QR code</p>
+          </div>
+        </nav>
+      </div>
+    <main class="page-content-wrapper">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                          <div id="reader"></div>
+                        </div>
+                        <div class="col-12 text-center">
+                          <h6>SCAN RESULT</h6>
+                          <div id="result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section">
+          <div class="container">
+            <div class="row d-flex justify-content-between px-3">
+              <div class="menu-bottom text-center">
+                <a href="index.html" class="footer-menu active-menu">
+                  <i class="fas fa-home fa-lg active-menu"></i>
+                  <figcaption>Home</figcaption>
+                </a>
+              </div>
+              <div class="menu-bottom text-center">
+                <a href="notification.html" class="footer-menu">
+                  <i class="fas fa-bell fa-lg"></i>
+                  <figcaption>Notification</figcaption>
+                </a>
+              </div>
+              <div class="menu-bottom text-center">
+                <a href="warehouse.html" class="footer-menu">
+                  <i class="fas fa-pallet fa-lg"></i>
+                  <figcaption>warehouse</figcaption>
+                </a>
+              </div>
+              <div class="menu-bottom text-center">
+                <a href="nearby.html" class="footer-menu">
+                  <i class="fas fa-map-pin fa-lg"></i>
+                  <figcaption>Nearby</figcaption>
+                </a>
+              </div>
+              <div class="menu-bottom text-center">
+                <a href="service.html" class="footer-menu">
+                  <i class="fas fa-headset fa-lg"></i>
+                  <figcaption>Service</figcaption>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/html5-qrcode.min.js"></script>
+
+    <script type="text/javascript">
+        function onScanSuccess(qrCodeMessage) {
+            document.getElementById('result').innerHTML = '<span class="result">'+qrCodeMessage+'</span>';
+        }
+        function onScanError(errorMessage) {
+          //handle scan error
+        }
+        var html5QrcodeScanner = new Html5QrcodeScanner(
+            "reader", { fps: 10, qrbox: 250 });
+        html5QrcodeScanner.render(onScanSuccess, onScanError);
+    </script>
+
+
+
+  </body>
+</html>
